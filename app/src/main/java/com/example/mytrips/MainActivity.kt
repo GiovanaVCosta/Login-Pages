@@ -115,6 +115,9 @@ fun Greeting() {
                                 contentDescription = "",
                                 modifier = Modifier
                                     .width(20.dp)
+                                    .height(20.dp)
+                                    .align(Alignment.CenterVertically)
+
                             )
                             Text(
                                 text = "  Email",
@@ -147,6 +150,8 @@ fun Greeting() {
                                 contentDescription = "",
                                 modifier = Modifier
                                     .width(20.dp)
+                                    .height(20.dp)
+                                    .align(Alignment.CenterVertically)
                             )
                             Text(
                                 text = "  Password",
@@ -177,6 +182,9 @@ fun Greeting() {
                 horizontalAlignment = Alignment.End
             ) {
                 Button(
+
+                    modifier = Modifier
+                        .height(50.dp),
                     onClick = { /*TODO*/ },
                     colors = ButtonDefaults
                         .buttonColors(
@@ -185,6 +193,7 @@ fun Greeting() {
                     shape = RoundedCornerShape(
                         12.dp
                     )
+
 
                 ) {
                     Row {
@@ -195,7 +204,13 @@ fun Greeting() {
                         )
                         Image(
                             painterResource(id = R.drawable.seta),
-                            contentDescription = ""
+                            contentDescription = "",
+                            modifier = Modifier
+                                .width(15.dp)
+                                .height(15.dp)
+                                .align(Alignment.CenterVertically)
+
+
                         )
                     }
                 }
@@ -345,6 +360,8 @@ fun TelaSp() {
                                 modifier = Modifier
                                     .width(20.dp)
                                     .height(20.dp)
+                                    .align(Alignment.CenterVertically)
+
                             )
                             Text(
                                 text = "  Username",
@@ -376,6 +393,8 @@ fun TelaSp() {
                                 modifier = Modifier
                                     .width(20.dp)
                                     .height(20.dp)
+                                    .align(Alignment.CenterVertically)
+
 
                             )
                             Text(
@@ -408,6 +427,8 @@ fun TelaSp() {
                                 modifier = Modifier
                                     .width(20.dp)
                                     .height(20.dp)
+                                    .align(Alignment.CenterVertically)
+
                             )
                             Text(
                                 text = "  Email",
@@ -441,6 +462,8 @@ fun TelaSp() {
                                 modifier = Modifier
                                     .width(20.dp)
                                     .height(20.dp)
+                                    .align(Alignment.CenterVertically)
+
 
                             )
                             Text(
