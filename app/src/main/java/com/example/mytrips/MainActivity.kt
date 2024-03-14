@@ -15,12 +15,15 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Card
+import androidx.compose.material3.CardColors
+import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.Checkbox
 import androidx.compose.material3.CheckboxDefaults
 import androidx.compose.material3.MaterialTheme
@@ -287,6 +290,7 @@ fun TelaSp() {
 
                 Card(
                     shape = CircleShape,
+                    colors = CardDefaults.cardColors(Color(0xfff5f5f8)),
                     modifier = Modifier
                         .padding(top = 25.dp)
                         .width(100.dp)
@@ -294,16 +298,22 @@ fun TelaSp() {
                         .border(
                             width = 1.dp,
                             color = Color(0xFFCF06F0),
-                            shape = RoundedCornerShape(100.dp)
-                        )
+                            shape = RoundedCornerShape(100.dp),
+                            )
 
-                ) {
+                    ) {
                     Image(
                         modifier = Modifier
-                            .fillMaxSize(),
+                            .align(Alignment.CenterHorizontally)
+                            .size(70.dp)
+                            .offset(y = 10.dp),
+
+
                         painter = painterResource(id = R.drawable.profile),
                         contentDescription = "Imagem de um homem sorrindo",
-                        contentScale = ContentScale.Crop
+                        contentScale = ContentScale.Crop,
+
+
                     )
 
                 }
@@ -313,7 +323,9 @@ fun TelaSp() {
                         id = R.drawable.photo),
                     contentDescription = "",
                     modifier = Modifier
-                        .offset(y = -20.dp, x = 35.dp )
+                        .offset(y = -20.dp, x = 35.dp)
+                        .width(100.dp)
+                        .height(20.dp)
                 )
 
             }
