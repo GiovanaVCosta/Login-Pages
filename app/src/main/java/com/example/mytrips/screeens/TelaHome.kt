@@ -84,7 +84,7 @@ fun Home(controleNavegacao: NavHostController) {
 
                     )
                     {
-                        Image(painter = painterResource(id = R.drawable.profile),
+                        Image(painter = painterResource(id = R.drawable.gato),
                             contentDescription = "Foto de perfil")
 
                     }
