@@ -29,10 +29,12 @@ import androidx.compose.runtime.remember
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavHostController
+import com.example.mytrips.R
 
 @Composable
 fun Login(controleNavegacao: NavHostController) {
@@ -71,12 +73,12 @@ fun Login(controleNavegacao: NavHostController) {
         Column (modifier = Modifier
             .padding(22.dp)
         ){
-            Text(text = "Login",
+            Text(text = stringResource(id = R.string.title),
                 color = Color(0xffCF06F0),
                 fontSize = 48.sp,
                 fontWeight = FontWeight.Bold,
             )
-            Text(text = "Please sign in to continue.",
+            Text(text = stringResource(id = R.string.sign_in),
                 color = Color(0xFFA09C9C)
             )
         }
@@ -98,11 +100,11 @@ fun Login(controleNavegacao: NavHostController) {
                     emailState.value = it
                 },
                 label = {
-                    Text(text = "E-mail")
+                    Text(text = stringResource(id = R.string.email))
                 },
                 leadingIcon = {
                     Icon(imageVector = Icons.Default.Lock,
-                        contentDescription = "oi",
+                        contentDescription = "",
                         tint = Color(0xffCF06F0),
                     )
                 },
@@ -122,7 +124,7 @@ fun Login(controleNavegacao: NavHostController) {
                     passwordState.value = it
                 },
                 label = {
-                    Text(text = "Password")
+                    Text(text = stringResource(id = R.string.email))
                 },
                 leadingIcon = {
                     Icon(imageVector = Icons.Default.Email,
@@ -161,7 +163,7 @@ fun Login(controleNavegacao: NavHostController) {
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.SpaceAround
                 ){
-                    Text(text = "Sign in",
+                    Text(text = stringResource(id = R.string.entrar),
                         fontSize = 26.sp)
                     Icon(imageVector = Icons.Default.ArrowForward,
                         contentDescription = "",
@@ -170,7 +172,7 @@ fun Login(controleNavegacao: NavHostController) {
                 }
             }
             Row {
-                Text(text = "Don’t have an account?",
+                Text(text = stringResource(id = R.string.sign_in),
                     color = Color(0xFFFA09C9C)
                 )
                 Text(text = "Sign in",

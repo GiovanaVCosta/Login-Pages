@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MyTrips</string>
+    <string name="title">Login</string>
+    <string name="sign_in">Faça login para continuar.</string>
+    <string name="email">"E-mail"</string>
+    <string name="password">"Senha"</string>
+    <string name="entrar">"Entarr"</string>
+    <string name="create">"Não tem uma conta??"</string>
+</resources>
